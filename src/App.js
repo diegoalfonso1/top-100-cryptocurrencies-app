@@ -17,6 +17,8 @@ function App() {
   const [watchList, setWatchList] = useState([]);
   const [counter, setCounter] = useState(0);
 
+  const [showCalculator, setShowCalculator] = useState(false);
+
   const fetchData = async () => {
     setLoading(true);
 
@@ -31,6 +33,8 @@ function App() {
         console.log("error");
       }
     }, 1200);
+
+    setShowCalculator(true);
   };
 
   const searchHandler = (e) => {
@@ -47,6 +51,7 @@ function App() {
         counter={counter}
         setCounter={setCounter}
         watchList={watchList}
+        fetchData={fetchData}
       />
       <main>
         <Switch>
@@ -82,8 +87,8 @@ function App() {
               setCounter={setCounter}
             />
           </Route>
-          <Route path='/calculator'>
-            <Calculator cryptos={cryptos} />
+          <Route path="/calculator">
+          <Calculator cryptos={cryptos}/>
           </Route>
         </Switch>
       </main>

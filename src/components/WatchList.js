@@ -1,9 +1,9 @@
 import "./WatchList.css";
 
 const WatchList = (props) => {
-  const { watchList, counter, setCounter, cryptos } = props;
+  const { watchList, setCounter } = props;
 
-  setCounter(watchList.length);
+  setCounter(watchList.length);  //esto genera erros ya que se estan renderizando mientras se renderiza a su vez el App compnent
 
   return (
     <div>

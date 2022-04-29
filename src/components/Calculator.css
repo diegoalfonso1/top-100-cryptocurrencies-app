@@ -1,0 +1,35 @@
+.calculator-container {
+  margin: 0 auto;
+  border: solid 1px rgb(238, 220, 63);
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 50px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+select {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(238, 220, 63);
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: large;
+}
+
+select:hover {
+  border: solid 1px;
+}
+
+option {
+  background-color: #222531;
+  color: rgb(238, 220, 63);
+  font-size: medium;
+}
+
+h5 {
+  text-decoration: double overline;
+  color: rgb(238, 220, 63);
+  font-size: large;
+}
+
