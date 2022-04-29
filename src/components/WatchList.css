@@ -1,0 +1,11 @@
+.message {
+  color: ghostwhite;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}

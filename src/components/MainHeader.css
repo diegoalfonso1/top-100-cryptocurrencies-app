@@ -1,0 +1,68 @@
+.top {  
+  padding: 0.5px;
+  text-align: center;
+
+  /* background-image: url('https://pbs.twimg.com/media/B3TpEy9CUAEtdoY.jpg');
+  background-size: 900px;
+  opacity: 0.95; */
+  background-color: #222531;
+  opacity: 0.95;
+  color: rgb(238, 220, 63);
+  z-index: 1;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: rgb(238, 220, 63);
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid rgb(238, 220, 63);
+}
+
+.header {
+  display: inline;
+}
+
+.navbar {
+  display: inline-flex;
+  position: sticky;
+  top: 0;
+}
+
+.home {
+  text-decoration: none;
+  color: rgb(238, 220, 63);
+  margin-left: 30px;
+  margin-right: 30px;
+  
+}
+
+.watch-list {
+  display: flex;
+  text-decoration: none;
+  color: rgb(238, 220, 63);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.calculator {
+  text-decoration: none;
+  color: rgb(238, 220, 63);
+  margin-left: 30px;
+  margin-right: 30px;
+  
+}
+
+.counter {
+  margin-left: 5px;
+  color: rgb(255, 0, 0);
+}
+
+.home:hover {
+  cursor: pointer;
+}
+
+.watch-list:hover {
+  cursor: pointer;
+}
