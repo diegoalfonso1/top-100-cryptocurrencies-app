@@ -3,9 +3,12 @@
   border: solid 1px rgb(238, 220, 63);
   border-radius: 10px;
   width: 250px;
+  height: 200px;
   margin-top: 50px;
   text-align: center;
   color: whitesmoke;
+  background-color: rgb(33, 41, 46, 0.7);;
+
 }
 
 select {

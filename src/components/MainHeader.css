@@ -1,12 +1,14 @@
 .top {
   padding: 0.5px;
   text-align: center;
+  position: sticky;
+  top: 0;
 
   /* background-image: url('https://pbs.twimg.com/media/B3TpEy9CUAEtdoY.jpg');
   background-size: 900px;
   opacity: 0.95; */
   background-color: #222531;
-  opacity: 0.95;
+  opacity: 0.92;
   color: rgb(238, 220, 63);
   z-index: 1;
 }
@@ -31,8 +33,6 @@
 
 .navbar {
   display: inline-flex;
-  position: sticky;
-  top: 0;
 }
 
 .home {

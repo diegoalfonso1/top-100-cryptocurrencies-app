@@ -17,8 +17,6 @@ function App() {
   const [watchList, setWatchList] = useState([]);
   const [counter, setCounter] = useState(0);
 
-  const [showCalculator, setShowCalculator] = useState(false);
-
   const fetchData = async () => {
     setLoading(true);
 
@@ -33,8 +31,6 @@ function App() {
         console.log("error");
       }
     }, 1200);
-
-    setShowCalculator(true);
   };
 
   const searchHandler = (e) => {
@@ -44,6 +40,16 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  //Almacenando en el localstorage aquellas monedas añadidas al watchlist
+  useEffect(() => {
+    const retrieveCrypto = JSON.parse(localStorage.getItem("watchlist"));
+    if (retrieveCrypto) setWatchList(retrieveCrypto);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("watchlist", JSON.stringify(watchList));
+  }, [watchList]);
 
   return (
     <div>
@@ -88,7 +94,7 @@ function App() {
             />
           </Route>
           <Route path="/calculator">
-          <Calculator cryptos={cryptos}/>
+            <Calculator cryptos={cryptos} />
           </Route>
         </Switch>
       </main>

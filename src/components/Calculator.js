@@ -5,7 +5,7 @@ import "./Calculator.css";
 const Calculator = (props) => {
   const { cryptos } = props;
 
-  const [selected, setSelected] = useState("Please select one coin!");
+  const [selected, setSelected] = useState("Please select a coin!");
   const [input, setInput] = useState("");
  
 

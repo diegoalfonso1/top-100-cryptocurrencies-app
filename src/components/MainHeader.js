@@ -1,17 +1,18 @@
 import { NavLink } from "react-router-dom";
 import "./MainHeader.css";
 
+
 const MainHeader = (props) => {
   const { counter, fetchData } = props;
 
   const titleClickHandler = () => {
-    fetchData()
-  }
+    fetchData();
+  };
 
   return (
     <div className="top">
       <header className="header">
-        <h3 onClick={titleClickHandler}>Check top 100 Cryptocurrencies</h3>
+        <h3 onClick={titleClickHandler}>Top 100 Cryptocurrencies</h3>
         <div className="navbar">
           <NavLink to="/home" activeClassName="active" className="home">
             <h4>Home</h4>

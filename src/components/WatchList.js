@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import "./WatchList.css";
 
 const WatchList = (props) => {
-  const { watchList, setCounter } = props;
+  const { watchList, setWatchList, setCounter } = props;
 
   setCounter(watchList.length);  //esto genera erros ya que se estan renderizando mientras se renderiza a su vez el App compnent
+
+
+
+
 
   return (
     <div>
